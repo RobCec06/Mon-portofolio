@@ -1,0 +1,42 @@
+header.header {
+    font-weight: bold;
+    background-color: #0C00FF;
+    text-align: center;
+    background-image: url("https://images3.alphacoders.com/444/thumb-1920-44447.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    height: 698px;
+    width: px;
+}
+
+nav.navbar {
+    nav-right: auto;
+}
+
+div.contact {
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+h1#name {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+ul#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: aqua;
+}
+
+img#photo {
+    left:840px;
+ top:42px;
+ position:absolute;
+}
