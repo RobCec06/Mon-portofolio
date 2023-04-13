@@ -280,8 +280,7 @@ footer a:hover img#githublogo {
     filter: brightness(0) invert(0.7);
 }
 
-footer p#prop,
-footer p#copy {
+footer p#prop, footer p#copy {
     margin: 0;
     padding: 5px;
 }
