@@ -195,7 +195,7 @@ div.Creation a {
 
 div.Creation img {
     display: block;
-    width: 100%;
+    width: 99%;
     height: auto;
     border: 2px solid #0C00FF;
     border-radius: 5px;
@@ -283,4 +283,23 @@ footer a:hover img#githublogo {
 footer p#prop, footer p#copy {
     margin: 0;
     padding: 5px;
+}
+
+.parallax {
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-bg {
+    background-image: url("/img/52279.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
