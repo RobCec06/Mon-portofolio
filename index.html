@@ -14,25 +14,26 @@
 <nav class="navbar">
     <ul id="nav">
         <a href="Portofolio.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About</a> 
         <a href="contact.html">Contact</a>
     </ul>
 </nav>
 <div class="Who">
     <div class="Iam">
-        <p> M'introduire, . <br> I am passionate about computer science and I am currently looking for an internship in the field of web development. </p>
+        <h3>Qui suis-je ?</h3>
+        <p>Passionné par l'informatique, je suis actuellement à la recherche d'un stage dans le domaine du développement web.</p>
     </div>
-    <div>
+    <div class="MesRecherches">
         <h3>Mes recherches...</h3>
-        <p>En formation à Nice, à la Web@cademie de nice, je suis sur une recherche d'une alternance dans le milieu</p>
+        <p>En formation à Nice, à la Web@cademie de Nice, je suis à la recherche d'une alternance dans le milieu.</p>
     </div>
 </div>
 <div class="Creation">
     <h3>Afin de présenter mes capacitées, je vous propose trois projets effectuer durant ma scolarité:</h3>
     <div id="twittos">
-        <h4>Twitter</h4>
-    <a href="my_twitter.com"><img src="https://media.discordapp.net/attachments/1026492069558099968/1095456975170568202/Rob1_Price_cute_new_version_of_twitter_logo_with_geek_style_a7b2176f-404f-460c-9254-a51478856188.png?width=676&height=676" alt="" id=""></a>
-        <p class="hidden-text">Durant 4 semaine nous avions eu pour premier projet de groupe de reproduire twitter </p>
+        <h4>Battleship</h4>
+        <a href="https://github.com/RobCec06/My_Battleship.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)"><img src="https://media.discordapp.net/attachments/1026492069558099968/1096056949499494521/Rob1_Price_Battleship_minigame_in_a_sci-fi_vibe_zone_c3606376-8ac7-441f-b4c1-1583c095a178.png?width=637&height=637" alt="" id=""></a>
+        <p class="hidden-text">Pendant une semaine notre école nous as déposé un jeu de bataille navale presque complet, sauf petit soucis, ces fonctionnalité ne marchait pas, il nous as été donné d'une semaine pour le débugger au maximum. </p>
 </div>
     <div id="scifiweb">
         <h4>Cinéma</h4>
@@ -41,10 +42,22 @@
     </div>
     <div id="P4">
         <h4>Puissance 4</h4>
-    <a href="myMB.com"><img src="https://media.discordapp.net/attachments/1026492069558099968/1095460758915137577/Rob1_Price_MB_game_opened_on_a_sci-fi_room_c0495b10-8136-4f1c-b7a9-9a8361530794.png?width=676&height=676" alt=""></a>
+    <a href="https://github.com/RobCec06/Puissance-4.git"><img src="https://media.discordapp.net/attachments/1026492069558099968/1095460758915137577/Rob1_Price_MB_game_opened_on_a_sci-fi_room_c0495b10-8136-4f1c-b7a9-9a8361530794.png?width=676&height=676" alt=""></a>
     <p class="hidden-text">Reproduction d'un puissance 4</p>
 </div>
 </div>
 </body>
 <footer></footer>
+<script>
+function showHiddenText(element) {
+    const hiddenText = element.querySelector('.hidden-text');
+    hiddenText.style.display = 'block';
+    hiddenText.style.opacity = '1';
+}
+
+function hideHiddenText(element) {
+    const hiddenText = element.querySelector('.hidden-text');
+    hiddenText.style.display = 'none';
+    hiddenText.style.opacity = '0';
+}</script>
 </html>
