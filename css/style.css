@@ -8,6 +8,8 @@ body {
     background-color: #222;
     color: #d3d3d3;
     line-height: 1.6;
+    overflow-x: hidden;
+    height: 100vh;
     }
     
     a {
@@ -222,11 +224,59 @@ div.Creation .hidden-text {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s;
+    visibility: visible;
 }
 
 div.Creation a:hover .hidden-text {
     display: block;
     opacity: 1;
+}
+
+div.Creation .button {
+    display: none;
+    position: absolute;
+    background-color: rgba(12, 12, 40, 0.9);
+    color: #d3d3d3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+div.Creation a:hover .button {
+    display: block;
+    opacity: 1;
+}
+
+
+.button {
+  background-color: transparent;
+  border: 2px solid #0C00FF;
+  border-radius: 50px;
+  color: #0C00FF;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #0C00FF;
+  color: white;
+}
+
+.button {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Pied de page */
