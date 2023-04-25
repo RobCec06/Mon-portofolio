@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     height: 100vh;
+    box-sizing: border-box;
     }
     
     a {
@@ -352,4 +353,177 @@ footer p#prop, footer p#copy {
     top: 0;
     width: 100%;
     z-index: -1;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 12, 40, 0.75);
+    padding: 20px 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+form:hover {
+    background-color: rgba(12, 12, 40, 0.95);
+}
+
+form label {
+    font-size: 16px;
+    color: #d3d3d3;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+form:hover label {
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgba(12, 12, 40, 0.6);
+    border: 1px solid #0C00FF;
+    color: #d3d3d3;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    background-color: rgba(12, 12, 40, 0.8);
+    color: white;
+}
+
+.button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+    hover {
+      background-color: transparent;
+      border-color: #fff;
+      transition: all .1s ease-in-out;
+    }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent; 
+    margin: 30px auto 0 auto;
+    border: solid 2px #424242;
+    border-top: solid 2px #1c89ff;
+    border-radius: 50%;
+    opacity: 0;
+  }
+
+    .loader.active {
+        animation: loading 5s ease-in-out; 
+        animation-fill-mode: forwards;
+    }
+
+    .main {
+        background-color: #262626;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+  .check {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(-4px,50px,0);
+    opacity: 0;
+  }
+    span:nth-child(1) {
+      display: block;
+      width: 10px;
+      height: 2px;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transform: rotate(-45deg) translate3d(14px, -4px, 0);
+      transform-origin: 100%;
+    }
+  
+  .loader.active {
+    animation: loading 2s ease-in-out; 
+    animation-fill-mode: forwards;
+  }
+  
+  .check.active {
+    opacity: 1;
+    transform: translate3d(-4px,4px,0);
+    transition: all .5s cubic-bezier(.49, 1.74, .38, 1.74);
+    transition-delay: .2s;
+  }
+  
+  @keyframes loading {
+    30% {
+      opacity:1; 
+    }
+    
+    85% {
+      opacity:1;
+      transform: rotate(1080deg);
+      border-color: #262626;
+    }
+    100% {
+      opacity:1;
+      transform: rotate(1080deg);
+       border-color: #1c89ff;
+    }
+  }
+
+form input[type="submit"]:hover {
+    background-color: #0C00FF;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+h2#send {
+    text-align: center;
+    color: #d3d3d3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
 }

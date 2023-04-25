@@ -26,3 +26,30 @@ function showButton(element) {
     const buttonContainer = element.querySelector('.button-container');
     buttonContainer.classList.remove('show-button');
   }
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Empêcher le rechargement de la page
+  
+    // Ajouter votre logique pour l'effet de confirmation ici
+    const loader = document.querySelector(".loader");
+    loader.style.display = "block";
+  
+    setTimeout(function () {
+      loader.style.display = "none";
+      document.querySelector("form").reset();
+    }, 2000);
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('.button'),
+        loader = document.querySelector('.loader'),
+        check = document.querySelector('.check');
+    
+    btn.addEventListener('click', function () {
+      loader.classList.add('active');    
+    });
+   
+    loader.addEventListener('animationend', function() {
+      check.classList.add('active'); 
+    });
+  });
+  
