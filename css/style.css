@@ -280,6 +280,7 @@ div.Creation a:hover .button {
     transform: translateY(0);
 }
 div.Creationab {
+    text-align: center;
     display: flex; /* Changé de block à flex */
     justify-content: space-around;
     flex-wrap: wrap;
@@ -330,7 +331,7 @@ div.Creationab a {
 
 div.Creationab img {
     display: block;
-    width: 100%; /* Changé de 99% à 100% */
+    width: 99%; /* Changé de 99% à 100% */
     height: auto;
     border: 2px solid #0C00FF;
     border-radius: 5px;
@@ -383,6 +384,115 @@ div.Creationab .button {
 }
 
 div.Creationab a:hover .button {
+    display: block;
+    opacity: 1;
+}
+
+div.Creationabc {
+    text-align: center;
+    display: flex; /* Changé de block à flex */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 70px;
+    border-radius: 10px;
+    align-items: center; /* Ajouté pour centrer verticalement */
+}
+
+div.Creationabc h3 {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d3d3d3;
+    font-weight: bold;
+}
+
+div.Creationabc div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-bottom: 30px;
+    background-color: rgba(12, 12, 40, 0.75);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+div.Creationabc div:hover {
+    transform: translateY(-10px);
+}
+
+div.Creationabc h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d3d3d3;
+    font-weight: bold;
+}
+
+div.Creationabc a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+div.Creationabc img {
+    display: block;
+    width: 99%; /* Changé de 99% à 100% */
+    height: auto;
+    border: 2px solid #0C00FF;
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+div.Creationabc a:hover img {
+    filter: blur(3px);
+}
+
+div.Creationabc .hidden-text {
+    display: none;
+    position: absolute;
+    background-color: rgba(12, 12, 40, 0.9);
+    color: #d3d3d3;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    visibility: visible;
+}
+
+div.Creationabc a:hover .hidden-text {
+    display: block;
+    opacity: 1;
+}
+
+div.Creationabc .button {
+    display: none;
+    position: absolute;
+    background-color: rgba(12, 12, 40, 0.9);
+    color: #d3d3d3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+div.Creationabc a:hover .button {
     display: block;
     opacity: 1;
 }
@@ -634,4 +744,8 @@ h2#send {
     color: #d3d3d3;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: 20px;
+}
+
+div#who {
+    text-align: center;
 }
