@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     box-sizing: border-box;
+    background-position: center;
     }
     
     a {
@@ -595,6 +596,7 @@ div.Creation {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 30%;
 }
 
 form:hover label {
@@ -736,6 +738,9 @@ form input[type="submit"]:hover {
     form {
         width: 90%;
         margin: 30px auto;
+    }
+    header.header {
+        height: 50vh;
     }
 }
 
