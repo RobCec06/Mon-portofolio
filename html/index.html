@@ -1,58 +1,126 @@
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Cecconi Robin</title>
-    </head>
-    <body>
-        <header class="header">
-            <h1 id="name"> Cecconi Robin </h1>
-            <img src="/img/1685014818172.jpg" alt="" id="photo">
-        </header>
-        <section class = parallax>
-            <div class="parallax-bg" data-speed="2">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Cecconi Robin</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="name">Cecconi Robin</h1>
+        <img src="/img/1685014818172.jpg" alt="" id="photo">
+    </header>
+    <section class="parallax">
+        <div class="parallax-bg" data-speed="2"></div>
+    </section>
+    <nav class="navbar">
+        <ul id="nav">
+            <li><a href=".Who">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="démonstration.html">Démonstration</a></li>
+        </ul>
+    </nav>
+    <section id="wow" data-aos="fade-up">
+        <div class="text">
+            <h1>Qui suis-je ?</h1>
+            <p>Nom & Prénom: Cecconi Robin</p>
+            <p>Age : 20 ans</p>
+            <p>Formation : Développement Web</p>
+            <p>Expérience : Je suis en formation</p>
+            <p>Compétences : HTML, CSS, JavaScript, React, Node.js</p>
+            <p>Langues : Français (natif), Anglais (courant), Espagnol (intermédiaire)</p>
+            <p>Loisirs : Lecture, Voyage, Cuisine</p>
+        </div>
+    </section>
+    <section data-aos="fade-up">
+    <div class="Who">
+        <div class="Iam">
+            <h3>Qui suis-je ?</h3>
+            <p>Je m'appelle Robin. Depuis mon plus jeune âge, j'ai été immergé dans le monde de l'informatique. Cependant, ce n'est qu'en intégrant mon école d'informatique que j'ai véritablement découvert l'univers de la programmation. Depuis lors, j'ai réussi à maîtriser différentes méthodes de programmation et à me sentir à l'aise dans ce domaine.</p>
+        </div>
+        <div class="MesRecherches">
+            <h3>Mes recherches...</h3>
+            <p>Actuellement en formation à la Web@cademie by Epitech de Nice, je suis à la recherche d'une alternance pour une période de plusieurs mois. Je vous invite à explorer mon portfolio pour en apprendre davantage sur mon parcours et mes compétences.</p>
+        </div>
+    </div>
+    </section>
+    <div class="Creationab">
+        <h3>Quelques projets pour vous en savoir plus :</h3>            
+        <div id="navale">
+            <h4>Battleship</h4>
+            <a href="https://github.com/RobCec06/My_Battleship.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
+                <img src="https://media.discordapp.net/attachments/1026492069558099968/1096056949499494521/Rob1_Price_Battleship_minigame_in_a_sci-fi_vibe_zone_c3606376-8ac7-441f-b4c1-1583c095a178.png?width=637&height=637" alt="">
+                <button class="button">En savoir plus</button>
+            </a>
+            <p class="hidden-textbattle">Au cours d'une semaine, notre école nous a confié un projet de jeu de bataille navale presque achevé. Cependant, un petit problème subsistait : certaines fonctionnalités ne fonctionnaient pas. On nous a donc donné une semaine pour déboguer le jeu et résoudre ces problèmes autant que possible.</p>
+        </div>
+        <div id="P4">
+            <h4>Puissance 4</h4>
+            <a href="https://github.com/RobCec06/Puissance-4.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
+                <img src="https://media.discordapp.net/attachments/1026492069558099968/1095460758915137577/Rob1_Price_MB_game_opened_on_a_sci-fi_room_c0495b10-8136-4f1c-b7a9-9a8361530794.png?width=676&height=676" alt="">
+                <button class="button">En savoir plus</button>
+            </a>
+            <p class="hidden-textp4">Pendant une semaine, notre école nous a demandé de développer un puissance 4. Les règles basiques nous ont été demandées : faire gagner le joueur unissant 4 pions selon leur sens.</p>
+        </div>
+    </div>
+    <div id="me">
+        <h1>En savoir plus sur moi ?</h1>
+        <p>Dis donc, vous descendez un peu trop bas pour essayer d'en savoir plus sur moi, dis donc.</p>
+    </div>
+    <h1>Puissance 4</h1>
+    <div class="container">
+        <div id="board"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="winner-message"></h2>
+            <img id="winner-image" src="https://media.giphy.com/media/o75ajIFH0QnQC3nCeD/giphy.gif" alt="Image du gagnant" />
+            <button id="close-modal">Fermer</button>
+        </div>
+    </div>
+    <section class="content">
+        <div class="Creationabc">
+            <h3>Voici les moyens les plus simples pour me contacter :</h3>
+            <div id="number">
+                <a href="tel:0610904104" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
+                    <img src="https://cdn.onlinewebfonts.com/svg/img_352137.png" alt="">
+                </a> 
+                <button class="button">M'appeler</button>
+                <p>N'hésitez pas à me contacter par téléphone</p>
             </div>
-        <nav class="navbar">
-            <ul id="nav">
-                <a href="Portofolio.html">Home</a>
-                <a href="about.html">About</a> 
-                <a href="contact.html">Contact</a>
-            </ul>
-        </nav>
-        <div class="Who">
-            <div class="Iam">
-                <h3>Qui suis-je ?</h3>
-                <p>Je m'appelle Robin. Depuis mon plus jeune âge, j'ai été immergé dans le monde de l'informatique. Cependant, ce n'est qu'en intégrant mon école d'informatique que j'ai véritablement découvert l'univers de la programmation. Depuis lors, j'ai réussi à maîtriser différentes méthodes de programmation et à me sentir à l'aise dans ce domaine.</p>
+            <div id="mail">
+                <a href="mailto:robin.cecconi@epitech.eu" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
+                    <img src="https://www.freepnglogos.com/uploads/email-logo-png-30.png" alt="">
+                </a>
+                <button class="button">Mail</button>
+                <p>N'hésitez pas à me contacter par mail</p>
             </div>
-            <div class="MesRecherches">
-                <h3>Mes recherches...</h3>
-                <p>Actuellement en formation à la Web@cademie by Epitech de Nice, je suis à la recherche d'une alternance pour une période de plusieurs mois. Je vous invite à explorer mon portfolio pour en apprendre davantage sur mon parcours et mes compétences.</p>
+            <div id="Linkedin">
+                <a href="https://www.linkedin.com/in/robin-cecconi-914681246/" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
+                    <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png" alt="">
+                </a>
+                <button class="button">Me contacter</button>
+                <p>N'hésitez pas à me contacter sur LinkedIn</p>
+            </div>
+            <div id="CV">
+                <a href="/dist/Robin CECCONI (6).pdf" download>
+                    <img src="" alt="">
+                    <button type="button">Télécharger mon CV</button>
+                </a>
             </div>
         </div>
-        <div class="Creationab">
-<h3>Quelque projets pour vous en savoir plus:</h3>            
-            <div id="navale">
-                <h4>Battleship</h4>
-                <a href="https://github.com/RobCec06/My_Battleship.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)"><img src="https://media.discordapp.net/attachments/1026492069558099968/1096056949499494521/Rob1_Price_Battleship_minigame_in_a_sci-fi_vibe_zone_c3606376-8ac7-441f-b4c1-1583c095a178.png?width=637&height=637" alt="" id="">
-                    <button class="button">En savoir plus</button>
-                </a>
-                <p class="hidden-textbattle">Au cours d'une semaine, notre école nous a confié un projet de jeu de bataille navale presque achevé. Cependant, un petit problème subsistait : certaines fonctionnalités ne fonctionnaient pas. On nous a donc donné une semaine pour déboguer le jeu et résoudre ces problèmes autant que possible. </p>
-            </div>
-            <div id="P4">
-        <h4>Puissance 4</h4>
-        <a href="https://github.com/RobCec06/Puissance-4.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)"><img src="https://media.discordapp.net/attachments/1026492069558099968/1095460758915137577/Rob1_Price_MB_game_opened_on_a_sci-fi_room_c0495b10-8136-4f1c-b7a9-9a8361530794.png?width=676&height=676" alt="">
-            <button class="button">En savoir plus</button></a>
-        <p class="hidden-textp4">Pendant une semaine, notre école nous a demandé de développer un puissance 4, les règles basiques nous ont été demandé: <br> faire gagner le joueur unissant 4 pions selon leur sens.</p>
-    </div>
-</div>
-</body>
-</section>
-<footer>
-    <a href="https://github.com/RobCec06"><img src="http://pngimg.com/uploads/github/github_PNG40.png" id="githublogo"></a>
-    <p id="prop">Propriété de RC</p>
-    <p id="copy">&copy; 2023</p>
-</footer>
-<script src="../js/js.js"></script>
+    </section>
+    <footer>
+        <a href="https://github.com/RobCec06">
+            <img src="http://pngimg.com/uploads/github/github_PNG40.png" id="githublogo">
+        </a>
+        <p id="prop">Propriété de RC</p>
+        <p id="copy">&copy; 2023</p>
+    </footer>
+    <script src="../js/js.js"></script>
 </html>

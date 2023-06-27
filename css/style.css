@@ -88,47 +88,44 @@ body {
     }
     
     div.Who {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(12, 12, 40, 0.85);
-    margin: 30px 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
-}
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(12, 12, 40, 0.85);
+        margin: 30px 0;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+      }
 
-div.Who:hover {
-    background-color: rgba(12, 12, 40, 0.95);
-}
+      div.Who:hover {
+        background-color: rgba(12, 12, 40, 0.95);
+      }
 
-div.Who h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #d3d3d3;
-    transition: color 0.3s ease;
-}
+      
 
-div.Who:hover h3 {
-    color: white;
-}
+      div.Who h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #d3d3d3;
+        transition: color 0.3s ease;
+      }
 
-div.Who p {
-    font-size: 16px;
-    color: #d3d3d3;
-    text-align: justify;
-    max-width: 350px;
-    margin: 0 auto;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-}
+      div.Who:hover h3 {
+        color: white;
+      }
 
-div.Who:hover p {
-    color: white;
-}
+      div.Who p {
+        font-size: 16px;
+        color: #d3d3d3;
+        transition: color 0.3s ease;
+      }
+      
+      div.Who:hover p {
+        color: white;
+      }
 
 div.Who div.Iam, div.Who div.MesRecherches {
     display: flex;
@@ -753,4 +750,43 @@ h2#send {
 
 div#who {
     text-align: center;
+}
+
+#wow {
+    background-color: rgba(12, 12, 40, 0.85); /* Couleur d'arrière-plan de la section */
+    padding: 20px; /* Espace intérieur autour du contenu */
+    margin: 20px auto; /* Marge extérieure autour de la section */
+    width: 80%; /* Largeur de la section */
+    border-radius: 10px; /* Coins arrondis de la section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre autour de la section pour donner un effet de profondeur */
+}
+
+#wow h1 , text{
+    color: #d3d3d3; /* Couleur du texte du titre */
+    text-align: center; /* Centrer le texte du titre */
+    border-bottom: 1px solid #d3d3d3; /* Ligne sous le titre pour le séparer du reste du contenu */
+    padding-bottom: 10px; /* Espace sous le titre */
+}
+@keyframes spaceIn {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+#wow .img {
+    float: right;
+    margin-left: 10px;    
+    border-color: black;
+    border: 40cm;
+}
+
+
+#wow  {
+    animation: spaceIn 2s ease-out forwards;
 }

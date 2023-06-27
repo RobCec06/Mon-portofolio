@@ -52,4 +52,37 @@ function showButton(element) {
       check.classList.add('active'); 
     });
   });
-  
+// Création d'une fonction pour naviguer à travers les sections de la page
+function navigateToSection(event) {
+    event.preventDefault();
+    const target = document.querySelector(event.target.hash);
+    window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
+    });
+}
+
+// Ajout d'un écouteur d'événements à tous les liens de navigation
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', navigateToSection);
+});
+
+function setActiveNavLink() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (window.pageYOffset >= (sectionTop - sectionHeight / 3)) {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.hash.includes(section.id)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}
+
+window.addEventListener('scroll', setActiveNavLink);
+
+AOS.init();
