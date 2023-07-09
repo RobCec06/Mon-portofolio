@@ -101,6 +101,12 @@ nav.navbar {
         transition: background-color 0.3s ease;
       }
 
+      .Who .MesRecherches {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
       div.Who:hover {
         background-color: rgba(12, 12, 40, 0.95);
       }
