@@ -52,7 +52,6 @@ function showButton(element) {
       check.classList.add('active'); 
     });
   });
-// Création d'une fonction pour naviguer à travers les sections de la page
 function navigateToSection(event) {
     event.preventDefault();
     const target = document.querySelector(event.target.hash);
@@ -62,7 +61,6 @@ function navigateToSection(event) {
     });
 }
 
-// Ajout d'un écouteur d'événements à tous les liens de navigation
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', navigateToSection);
 });
@@ -84,5 +82,15 @@ function setActiveNavLink() {
 }
 
 window.addEventListener('scroll', setActiveNavLink);
+const textElement = document.querySelector('.type');
+let index = 0;
 
-AOS.init();
+function typeWriter() {
+  if (index < text.length) {
+    textElement.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100); // Délai entre chaque caractère (100ms dans cet exemple)
+  }
+}
+
+typeWriter();

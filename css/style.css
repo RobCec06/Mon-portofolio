@@ -55,15 +55,17 @@ body {
     border: 4px solid white;
     }
     
-    /* Barre de navigation */
-    nav.navbar {
+  
+nav.navbar {
     display: flex;
     justify-content: center;
     background-color: rgba(12, 12, 40, 0.75);
     padding: 10px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
+    width: 100%;
+    
     }
     
     nav.navbar ul#nav {
@@ -136,14 +138,33 @@ div.Who div.Iam, div.Who div.MesRecherches {
 
 @media (max-width: 768px) {
     div.Who {
-        flex-direction: column;
+      flex-direction: column;
     }
-
-    div.Who div.Iam, div.Who div.MesRecherches {
-        display: block;
-        margin: 20px 0;
+  
+    div.Who div.Iam,
+    div.Who div.MesRecherches {
+      display: block;
+      margin: 20px 0;
     }
-}
+  
+    header.header h1#name {
+      font-size: 24px;
+    }
+  
+    header.header img#photo {
+      max-width: 100px;
+    }
+  
+    div.Who div.Iam,
+    div.Who div.MesRecherches {
+      margin: 10px 0;
+    }
+  
+    div.Creation div {
+      flex-basis: 45%;
+    }
+  }
+  
 
 div.Creation {
     display: flex;
@@ -519,6 +540,54 @@ footer {
     }
 }
 
+
+@media (max-width: 480px) {
+  div.Creation div,
+  div.Creationab div,
+  div.Creationabc div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  div.Creation div,
+  div.Creationab div,
+  div.Creationabc div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  header.header h1#name {
+    font-size: 24px;
+  }
+
+  header.header img#photo {
+    max-width: 100px;
+  }
+
+  div.Who div.Iam,
+  div.Who div.MesRecherches {
+    margin: 10px 0;
+  }
+
+  div.Creation div,
+  div.Creationab div,
+  div.Creationabc div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header.header h1#name {
+    font-size: 18px;
+  }
+
+  header.header img#photo {
+    max-width: 80px;
+  }
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -748,25 +817,59 @@ h2#send {
     margin-bottom: 20px;
 }
 
-div#who {
-    text-align: center;
-}
+
 
 #wow {
-    background-color: rgba(12, 12, 40, 0.85); /* Couleur d'arrière-plan de la section */
-    padding: 20px; /* Espace intérieur autour du contenu */
-    margin: 20px auto; /* Marge extérieure autour de la section */
-    width: 80%; /* Largeur de la section */
-    border-radius: 10px; /* Coins arrondis de la section */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre autour de la section pour donner un effet de profondeur */
-}
+    position: relative;
+    background-color: #000;
+    border: 2px solid #FFD700;
+    padding: 20px;
+    font-family: "Press Start 2P", cursive;
+    color: #FFD700;
+    overflow: auto; /* Ajoutez cette ligne pour gérer le flux des éléments enfants */
+    vertical-align: top;
+  }
+  
+  #wow::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #FFD700;
+    width: 0;
 
-#wow h1 , text{
-    color: #d3d3d3; /* Couleur du texte du titre */
-    text-align: center; /* Centrer le texte du titre */
-    border-bottom: 1px solid #d3d3d3; /* Ligne sous le titre pour le séparer du reste du contenu */
-    padding-bottom: 10px; /* Espace sous le titre */
-}
+  }
+
+  #wow h1 {
+    text-align: center;
+  }
+  
+  #wow::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #FFD700;
+    width: 0;
+  }
+  
+  #wow-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  #wow p {
+    margin: 10px 0;
+  }
+  
+  #wow img {
+    width: 350px;
+    float: right;
+  }
+  
+  
 @keyframes spaceIn {
     0% {
         transform: translateY(-100vh);
@@ -778,15 +881,17 @@ div#who {
     }
 }
 
+[data-aos] {
+    transition-property: opacity, transform;
+  }
 
-#wow .img {
-    float: right;
-    margin-left: 10px;    
-    border-color: black;
-    border: 40cm;
+#me {
+    background-color: #000;
+    border: 2px solid blue;
+    box-shadow: 0 0 10px blue;
+    padding: 20px;
+    font-family: "Courier New", monospace;
+    color: white;
+    text-align: center;
 }
 
-
-#wow  {
-    animation: spaceIn 2s ease-out forwards;
-}
