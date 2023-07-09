@@ -14,8 +14,8 @@
 </head>
 <body>
     <header class="header">
-        <h1 id="name">Cecconi Robin</h1>
-        <img src="/img/1685014818172.jpg" alt="" id="photo">
+        <h1 id="name" data-aos="zoom-in-down">Cecconi Robin</h1>
+        <img src="/img/1685014818172.jpg" alt="" id="photo" data-aos="zoom-in">
     </header>
     <section class="parallax">
         <div class="parallax-bg" data-speed="2"></div>
@@ -34,21 +34,20 @@
         <img src="/img/1686268431999.jpg" alt="">
         <p>Nom & Prénom: Cecconi Robin</p>
         <p>Age : 20 ans</p>
-        <p>Formation : Développement Web</p>
-        <p>Expérience : Je suis en formation</p>
+        <p>Formation : Web@cadémie by Epitech (Full-Stack Développeur)</p>
         <p>Compétences : HTML, CSS, JavaScript, React, Node.js</p>
         <p>Langues : Français (natif), Anglais (courant), Espagnol (intermédiaire)</p>
         <p>Loisirs : Lecture, Voyage, Cuisine</p>
     </div>
       
-    <div class="Who">
+    <div class="Who" data-aos="zoom-out-down">
         <div class="Iam">
             <h3>Qui suis-je ?</h3>
             <p>Je m'appelle Robin. Depuis mon plus jeune âge, j'ai été immergé dans le monde de l'informatique. Cependant, ce n'est qu'en intégrant mon école d'informatique que j'ai véritablement découvert l'univers de la programmation. Depuis lors, j'ai réussi à maîtriser différentes méthodes de programmation et à me sentir à l'aise dans ce domaine.</p>
         </div>
         <div class="MesRecherches">
             <h3>Mes recherches...</h3>
-            <p>Actuellement en formation à la Web@cademie by Epitech de Nice, je suis à la recherche d'une alternance pour une période de plusieurs mois. Je vous invite à explorer mon portfolio pour en apprendre davantage sur mon parcours et mes compétences.</p>
+            <p>Actuellement en formation à la Web@cademie by Epitech de Nice, je suis à la recherche d'une alternance pour une période de plusieurs mois. Je vous invite à explorer mon portfolio pour en apprendre davantage sur mon parcours et mes compétences ou de télécharger mon cv en cliquant <a href="#content">ici</a>.</p>
         </div>
     </div>
     </section>
@@ -56,7 +55,7 @@
 
         <div class="Creationab">
             <h3>Quelques projets pour vous en savoir plus :</h3>            
-            <div id="navale">
+            <div id="navale" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h4>Battleship</h4>
                 <a href="https://github.com/RobCec06/My_Battleship.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
                     <img src="https://media.discordapp.net/attachments/1026492069558099968/1096056949499494521/Rob1_Price_Battleship_minigame_in_a_sci-fi_vibe_zone_c3606376-8ac7-441f-b4c1-1583c095a178.png?width=637&height=637" alt="">
@@ -64,7 +63,7 @@
                 </a>
                 <p class="hidden-textbattle">Au cours d'une semaine, notre école nous a confié un projet de jeu de bataille navale presque achevé. Cependant, un petit problème subsistait : certaines fonctionnalités ne fonctionnaient pas. On nous a donc donné une semaine pour déboguer le jeu et résoudre ces problèmes autant que possible.</p>
             </div>
-            <div id="P4">
+            <div id="P4" data-aos="fade-left">
                 <h4>Puissance 4</h4>
                 <a href="https://github.com/RobCec06/Puissance-4.git" onmouseenter="showHiddenText(this)" onmouseleave="hideHiddenText(this)">
                     <img src="https://media.discordapp.net/attachments/1026492069558099968/1095460758915137577/Rob1_Price_MB_game_opened_on_a_sci-fi_room_c0495b10-8136-4f1c-b7a9-9a8361530794.png?width=676&height=676" alt="">
@@ -74,21 +73,34 @@
             </div>
         </div>
     </section>
-        <div id="me">
+        <div id="me" data-aos="flip-up">
             <h1>En savoir plus sur moi ?</h1>
             <p id="type">Dis donc, vous descendez un peu trop bas pour essayer d'en savoir plus sur moi, dis donc.</p>
+            <h3>Et bien continuons...</h3>
+            <img src="https://media4.giphy.com/media/5hc2bkC60heU/giphy.gif?cid=ecf05e47l8n26zky2imz6wu4qn10dxr596q376dau0rr49ie&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="">
     </div>
+    <section id="test">
     <h1>Puissance 4</h1>
     <div class="container">
+        <h1>Puissance 4</h1>
         <div id="board"></div>
-    </div>
+        <div class="status">
+          <span class="player-indicator" id="player-indicator"></span>
+          <span id="status-text">C'est au tour de <span id="current-player">rouge</span></span>
+        </div>
+        <div class="buttons">
+          <button id="replay">Rejouer</button>
+          <button id="undo">Annuler</button>
+        </div>
+      </div>
     <div id="modal" class="modal">
         <div class="modal-content">
-            <h2 id="winner-message"></h2>
-            <img id="winner-image" src="https://media.giphy.com/media/o75ajIFH0QnQC3nCeD/giphy.gif" alt="Image du gagnant" />
-            <button id="close-modal">Fermer</button>
+          <h2 id="winner-message"></h2>
+          <img id="winner-image" src="19j64q.jpg" alt="Image du gagnant" />
+          <button id="close-modal">Fermer</button>
         </div>
-    </div>
+      </div>
+    </section>
     <section id="content">
         <div class="Creationabc">
             <h3>Voici les moyens les plus simples pour me contacter :</h3>
