@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("/img/52279.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12,6 +11,15 @@ body {
     height: 100vh;
     box-sizing: border-box;
     background-position: center;
+    }
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* The video is in the background */
+      object-fit: cover; /* Added to ensure video covers the whole container */
     }
     
     a {
