@@ -834,54 +834,54 @@
 
 
   #wow {
-      position: relative;
-      background-color: #000;
-      border: 2px solid #FFD700;
-      padding: 20px;
-      font-family: "Press Start 2P", cursive;
-      color: #FFD700;
-      overflow: auto; /* Ajoutez cette ligne pour gérer le flux des éléments enfants */
-      vertical-align: top;
-    }
-    
-    #wow::before {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: -10px;
-      border-top: 10px solid transparent;
-      border-left: 10px solid #FFD700;
-      width: 0;
+    position: relative;
+    padding: 20px;
+    background-color: #000;
+    border: 2px solid #FFD700;
+    overflow: auto; 
+    font-family: "Press Start 2P", cursive;
+    color: #FFD700;
+}
 
-    }
+#wow h1 {
+    text-align: center;
+}
 
-    #wow h1 {
-      text-align: center;
-    }
-    
-    #wow::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      right: -10px;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid #FFD700;
-      width: 0;
-    }
-    
-    #wow-content {
-      display: flex;
-      align-items: center;
-    }
-    
-    #wow p {
-      margin: 10px 0;
-    }
-    
-    #wow img {
-      width: 350px;
-      float: right;
-    }
+#wow p {
+    margin: 10px 0;
+}
+
+#wow img {
+    width: 350px;
+    float: right;
+}
+
+#wow::before,
+#wow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-color: transparent #FFD700;
+}
+
+#wow::before {
+    top: -10px;
+    left: -10px;
+    border-width: 10px 0 0 10px;
+}
+
+#wow::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 10px 10px 0;
+}
+
+/* Si vous avez besoin d'utiliser #wow-content, assurez-vous qu'il est présent dans votre code HTML */
+/* #wow-content {
+    display: flex;
+    align-items: center;
+} */
+
     
     
   @keyframes spaceIn {
@@ -900,7 +900,7 @@
     }
 
   #me {
-      background-color: #303031;
+      background-color: #000000;
       border: 2px solid blue;
       box-shadow: 0 0 10px blue;
       padding: 20px;
