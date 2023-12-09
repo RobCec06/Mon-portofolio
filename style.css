@@ -1080,3 +1080,28 @@ div.Who #parare:hover::after {
         margin-bottom: 10px; 
     }
 }
+
+@media (max-width: 768px) {
+  header.header {
+      height: auto;
+      min-height: 100vh;
+  }
+
+  header.header h1#name {
+      font-size: 24px;
+      margin-right: 0;
+  }
+
+  header.header img#photo {
+      max-width: 100px;
+      margin-bottom: 20px;
+  }
+
+  nav.navbar ul#nav {
+      flex-direction: column;
+  }
+
+  nav.navbar ul#nav a {
+      margin-bottom: 10px;
+  }
+}
