@@ -74,6 +74,8 @@
       top: 0;
       z-index: 1000;
       width: 100%;
+      font-family: 'Orbitron', sans-serif;
+
       
       }
       
@@ -1081,27 +1083,7 @@ div.Who #parare:hover::after {
     }
 }
 
-@media (max-width: 768px) {
-  header.header {
-      height: auto;
-      min-height: 100vh;
-  }
+#copy, #prop {
+  font-family: 'Orbitron', sans-serif;
 
-  header.header h1#name {
-      font-size: 24px;
-      margin-right: 0;
-  }
-
-  header.header img#photo {
-      max-width: 100px;
-      margin-bottom: 20px;
-  }
-
-  nav.navbar ul#nav {
-      flex-direction: column;
-  }
-
-  nav.navbar ul#nav a {
-      margin-bottom: 10px;
-  }
 }
