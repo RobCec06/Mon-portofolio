@@ -33,34 +33,35 @@
       
       /* En-tête */
       header.header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      background-color: rgba(12, 12, 40, 0.75);
-      text-align: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
+        display: flex;
+        flex-direction: row;  /* Changement de column à row */
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        background-color: rgba(12, 12, 40, 0.75);
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
       }
       
       header.header h1#name {
-      font-size: 50px;
-      color: white;
-      font-family: "Times New Roman", Times, serif;
-      margin-bottom: 20px;
+        font-size: 50px;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-right: 20px;
       }
       
       header.header img#photo {
-      max-width: 200px;
-      border-radius: 50%;
-      border: 4px solid white;
+        max-width: 200px;
+        border-radius: 50%;
+        border: 4px solid white;
+        order: -1;
       }
       
     
@@ -149,6 +150,7 @@
       align-items: center;
       margin: 20px;
   }
+
 
   @media (max-width: 768px) {
       div.Who {
