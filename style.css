@@ -98,58 +98,69 @@
       background-color: rgba(50, 50, 100, 0.5);
       }
       
-      div.Who {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          padding: 20px;
-          background-color: rgba(12, 12, 40, 0.85);
-          margin: 30px 0;
-          border-radius: 10px;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-          transition: background-color 0.3s ease;
-        }
+/* Import de la police Orbitron depuis Google Fonts */
 
-        .Who .MesRecherches {
-          max-width: 600px;
-          margin: 0 auto;
-          text-align: center;
-        }
+div.Who {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #001f3f;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron', sans-serif; /* Appliquer la police Orbitron */
+}
 
-        div.Who:hover {
-          background-color: rgba(12, 12, 40, 0.95);
-        }
+div.Who:hover {
+    background-color: #003366;
+}
 
-        
+div.Who h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #29abe2;
+    text-align: center;
+    transition: color 0.3s ease;
+}
 
-        div.Who h3 {
-          font-size: 24px;
-          margin-bottom: 20px;
-          font-weight: bold;
-          color: #d3d3d3;
-          transition: color 0.3s ease;
-        }
+div.Who:hover h3 {
+    color: white;
+}
 
-        div.Who:hover h3 {
-          color: white;
-        }
+div.Who p {
+    font-size: 18px;
+    color: #d3d3d3;
+    text-align: center;
+    transition: color 0.3s ease;
+    line-height: 1.6;
+}
 
-        div.Who p {
-          font-size: 16px;
-          color: #d3d3d3;
-          transition: color 0.3s ease;
-        }
-        
-        div.Who:hover p {
-          color: white;
-        }
+div.Who:hover p {
+    color: white;
+}
 
-  div.Who div.Iam, div.Who div.MesRecherches {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-  }
+div.Who #parare::before,
+div.Who #parare::after {
+    content: "\2605";
+    font-size: 36px;
+    margin: 10px 5px;
+    color: #29abe2;
+}
+
+/* Ajout d'une animation pour les étoiles */
+div.Who #parare:hover::before,
+div.Who #parare:hover::after {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+    
+    
+    
 
 
   @media (max-width: 768px) {
@@ -436,11 +447,11 @@
   }
 
   div.Creationabc h3 {
-      width: 100%;
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #d3d3d3;
-      font-weight: bold;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
   }
 
   div.Creationabc div {
@@ -537,6 +548,10 @@
   div.Creationabc a:hover .button {
       display: block;
       opacity: 1;
+  }
+
+  div.creationabc p {
+    font-family: 'Orbitron', sans-serif;
   }
 
   /* Pied de page */
@@ -1052,4 +1067,13 @@
         font-size: 24px; 
         margin-bottom: 10px; 
     }
+}
+
+#idcolorit {
+  font-family: 'Orbitron', sans-serif;
+}
+
+#colortitle {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
 }
