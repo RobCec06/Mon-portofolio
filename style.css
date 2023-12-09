@@ -1050,6 +1050,18 @@ div.Who #parare:hover::after {
       margin: 0 10px; /* Pour ajouter un peu d'espacement entre les images */
   }
   
+  
+  #idcolorit {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  #colortitle {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  }
+
+
+  /*responsive zone*/
   @media (max-width: 768px) {
     section#name {
         padding: 20px; 
@@ -1067,13 +1079,4 @@ div.Who #parare:hover::after {
         font-size: 24px; 
         margin-bottom: 10px; 
     }
-}
-
-#idcolorit {
-  font-family: 'Orbitron', sans-serif;
-}
-
-#colortitle {
-  font-family: 'Orbitron', sans-serif;
-  text-align: center;
 }
