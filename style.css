@@ -1033,3 +1033,21 @@
       margin: 0 10px; /* Pour ajouter un peu d'espacement entre les images */
   }
   
+  @media (max-width: 768px) {
+    section#name {
+        padding: 20px; 
+        font-size: 16px;
+        margin-bottom: 10px;;
+    }
+
+    #wow img {
+        width: 100%; 
+        float: none; 
+        margin-bottom: 10px;
+    }
+
+    header.header h1#name {
+        font-size: 24px; 
+        margin-bottom: 10px; 
+    }
+}
