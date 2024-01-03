@@ -637,7 +637,6 @@ div.Who #parare:hover::after {
       padding: 20px 0;
       text-align: center;
       font-size: 14px;
-      color: #d3d3d3;
   }
 
   footer a {
@@ -1161,3 +1160,121 @@ form:hover label {
   color: white;
 }
 
+#work {
+  font-family: 'Arial', sans-serif;
+  color: #d3d3d3; /* Couleur de texte claire pour contraste */
+  background: radial-gradient(circle, rgba(54,54,54,1) 0%, rgba(21,21,21,1) 100%); /* Dégradé pour un effet spatial */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); /* Ombre bleue pour un effet néon futuriste */
+  text-align: center;
+  margin: auto;
+  max-width: 80%; /* Ajustable selon la mise en page souhaitée */
+  border: 1px solid rgba(0, 255, 255, 0.6); /* Bordure de style néon */
+  display: flex;
+  align-items: start; /* Aligner les éléments en haut */
+  justify-content: space-between;
+}
+
+#work h1, #work h3 {
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.7); /* Ombre de texte pour un effet lumineux */
+}
+
+#work img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#work img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Ombre dynamique au survol */
+}
+
+.work-content {
+  flex: 1;
+  text-align: left;
+  text-align: center;
+}
+
+.cv-section {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Aligner le contenu en haut */
+}
+
+.cv-section img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  border: none; /* Retire la bordure de l'image */
+}
+
+@media (max-width: 768px) {
+    #work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-content, .cv-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .work-content img, .cv-section img {
+        max-width: 80%;
+        margin: 0 auto; /* Centre l'image */
+    }
+
+    /* Adapter les styles du formulaire pour de plus petits écrans */
+    form {
+        width: 100%;
+        /* Autres styles nécessaires pour le formulaire */
+    }
+}
+
+/* Styles pour les petits appareils (téléphones mobiles, etc.) */
+@media (max-width: 480px) {
+    .work-content img, .cv-section img {
+        max-width: 100%;
+    }
+
+    /* Autres ajustements pour les petits écrans */
+}
+
+/* Styles pour les appareils de taille moyenne (tablettes, etc.) */
+@media (max-width: 768px) {
+  /* Autres styles... */
+
+  form {
+      width: 100%; /* Utilise la pleine largeur disponible */
+      padding: 10px; /* Ajoute un peu de padding pour éviter que le contenu touche les bords */
+  }
+
+  form input[type="text"], form input[type="email"], form textarea {
+      width: calc(100% - 20px); /* Réduit la largeur pour tenir compte du padding */
+      margin: 10px 0; /* Ajoute un peu d'espace autour des champs */
+  }
+
+  form button {
+      width: 100%; /* Permet au bouton de s'étendre sur toute la largeur */
+  }
+}
+
+/* Styles pour les petits appareils (téléphones mobiles, etc.) */
+@media (max-width: 480px) {
+  /* Autres styles... */
+
+  form {
+      padding: 5px; /* Diminue le padding sur les très petits écrans */
+  }
+
+  form input[type="text"], form input[type="email"], form textarea {
+      width: calc(100% - 10px); /* Ajuste la largeur pour les très petits écrans */
+  }
+}
